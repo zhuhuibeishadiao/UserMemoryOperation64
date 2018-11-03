@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Document Version="2">
+    <Protection InputFileName="UserMemoryOperation64.dll" Options="787144" VMCodeSectionName=".qqq">
+        <Messages />
+        <Folders />
+        <Procedures>
+            <Procedure MapAddress='string &quot;ZwOpenSection&quot;' Options="0" />
+            <Procedure MapAddress='string &quot;ZwMapViewOfSection&quot;' Options="0" />
+            <Procedure MapAddress='string &quot;ZwClose&quot;' Options="0" />
+            <Procedure MapAddress='string &quot;PsGetCurrentProcess&quot;' Options="0" />
+            <Procedure MapAddress='string &quot;PsGetCurrentProcessId&quot;' Options="0" />
+            <Procedure MapAddress='string &quot;PsGetProcessId&quot;' Options="0" />
+            <Procedure MapAddress='string &quot;MmGetPhysicalMemoryRanges&quot;' Options="0" />
+            <Procedure MapAddress='string &quot;MmGetSystemRoutineAddress&quot;' Options="0" />
+            <Procedure MapAddress='VMProtectMarker &quot;Initialization&quot;' Options="0" CompilationType="2" />
+        </Procedures>
+        <Objects />
+    </Protection>
+    <DLLBox>
+        <Folders />
+    </DLLBox>
+    <Script />
+    <LicenseManager />
+</Document>
