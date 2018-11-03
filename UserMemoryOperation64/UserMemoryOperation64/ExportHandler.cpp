@@ -11,20 +11,10 @@ USERMEMORYOPERATION64_API LONG Initialization()
 {
     VMProtectBeginUltra("Initialization");
 #ifndef VMP_VERSION
-    MessageBox(NULL, "µ±Ç°°æ±¾²»±»VMP±£»¤ Èç¹ûÊÇ·¢²¼°æ±¾ ÇëÔÚPCH.HÖĞ¶¨ÒåVMP_VERSION\n Èç¹ûÊÇ²âÊÔ°æ±¾ ÎŞÊÓ´ËÌáÊ¾.\n", "No Vmp", MB_OK);
+    MessageBox(NULL, "å½“å‰ç‰ˆæœ¬ä¸è¢«VMPä¿æŠ¤ å¦‚æœæ˜¯å‘å¸ƒç‰ˆæœ¬ è¯·åœ¨PCH.Hä¸­å®šä¹‰VMP_VERSION\n å¦‚æœæ˜¯æµ‹è¯•ç‰ˆæœ¬ æ— è§†æ­¤æç¤º.\n", "No Vmp", MB_OK);
 #endif // !VMP_VERSION
 
-    SYSTEMTIME systm;
-    GetLocalTime(&systm);
-
-    if (systm.wMonth == 10 && systm.wDay <= 30)
-    {
-        Controller = Mc_InitContext();
-    }
-    else
-    {
-        Controller.CreationStatus = 1;
-    }
+    Controller = Mc_InitContext();
     Sleep(200);
     VMProtectEnd();
     return Controller.CreationStatus;
